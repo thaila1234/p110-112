@@ -1,0 +1,60 @@
+ 
+<html>
+  <head>
+    <title>Emoção em</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+      <h3 class="btn btn-success header">App emoção em emoji!
+        <br>
+        <span>&#9996;</span>
+        <span>&#129305;</span>
+        <span>&#128077;</span>
+
+      </h3>
+      <p style="font-size: 22px;">Tire sua selfie para gerar o emoji </p>
+
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Visualização da câmera:</label>
+        <div id="webcam"></div>
+        <br>
+        <button id="btnCapturar" onclick="takeSnapshot()">Capturar!</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Previsão 1:</label>
+        <p class="emotionName" id="emotioName"></p>
+        <p class="emoji" id="emoji"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Foto:</label>
+        <div id="result"></div>
+        <br>
+        <button id="btnVerificar" onclick="check()">Reconhecer!</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
